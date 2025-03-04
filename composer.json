@@ -1,0 +1,19 @@
+{
+    "name": "oskar-mikael/livewire-dirty-state",
+    "description": "Implement a smarter dirty state to your Livewire components",
+    "require": {
+        "livewire/livewire": "3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "OskarMikael\\LivewireDirtyState\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oskar-Mikael",
+            "email": "oskar.m.bostrom@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
