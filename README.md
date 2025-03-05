@@ -15,13 +15,13 @@ Implements dirty states to your Livewire component, and automatically prompts yo
 
 # Installation
 
-```
+```bash
 composer require oskar-mikael/livewire-dirty-state
 ```
 
 # Usage
 ### Example
-```
+```php
 <?php
 
 namespace App\Livewire;
@@ -48,7 +48,7 @@ class TestComponent extends Component
 State will be made dirty upon a property values' updated.
 
 ### Manually update the dirty state
-```
+```php
 // Set state to dirty
 $this->setDirty()
 
@@ -64,16 +64,14 @@ $this->setDirty(false)
 
 [](https://github.com/GinoPane/composer-package-template/blob/master/README.md#running-tests)
 
-```
+```bash
 php vendor/bin/phpunit
-
 ```
 
 or
 
-```
+```bash
 composer test
-
 ```
 
 # Contributing
