@@ -3,7 +3,7 @@
     "description": "Implement a smarter dirty state to your Livewire components",
     "require": {
         "php": ">=8.1",
-        "livewire/livewire": "3.6"
+        "livewire/livewire": "^3.6"
     },
     "autoload": {
         "psr-4": {
