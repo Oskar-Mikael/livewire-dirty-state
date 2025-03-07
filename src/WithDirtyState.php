@@ -1,8 +1,10 @@
 <?php
 
-namespace OskarMikael\LivewireDirtyState\Traits;
+namespace OskarM\LivewireDirtyState;
 
-trait HasDirtyState
+use ReflectionClass;
+
+trait WithDirtyState
 {
     public bool $isDirty = false;
 
@@ -22,6 +24,12 @@ trait HasDirtyState
 
     public function updatingHasDirtyState($field, $value): void
     {
+        $property = (new ReflectionClass($this))->getProperty($field);
+
+        if (!empty($property->getAttributes(\OskarM\LivewireDirtyState\Attributes\IgnoreDirtyState::class))) {
+            return;
+        }
+        
         if ($field !== 'isDirty') {
             $this->setDirty();
         }
