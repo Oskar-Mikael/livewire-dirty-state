@@ -11,7 +11,7 @@ Implements dirty states to your Livewire component, and automatically prompts yo
 ## Requirements
 
 -   PHP >= 8.1
--   Livewire >=3.6
+-   Livewire ^3.6
 
 
 # Installation
