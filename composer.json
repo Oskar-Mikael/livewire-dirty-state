@@ -21,7 +21,7 @@
             "email": "oskar.m.bostrom@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "scripts": {
         "test": [
             "./vendor/bin/phpunit"
