@@ -27,11 +27,11 @@ composer require oskar-mikael/livewire-dirty-state
 namespace App\Livewire;
 
 use Livewire\Component;
-use OskarMikael\LivewireDirtyState\Traits\HasDirtyState;
+use OskarMikael\LivewireDirtyState\WithDirtyState;
 
 class TestComponent extends Component
 {
-    use HasDirtyState;
+    use WithDirtyState;
 
     public string $name;
 
@@ -54,6 +54,15 @@ $this->setDirty()
 
 // Remove dirty state
 $this->setDirty(false)
+```
+
+### Ignore dirty state on individual properties
+
+By default, all properties will update the dirty state, but if you'd one or more properties not to do so,
+you can apply the `IgnoreDirtyState` attribute to the property.
+```php
+#[IgnoreDirtyState]
+public string $name;
 ```
 
 # Useful Tools
